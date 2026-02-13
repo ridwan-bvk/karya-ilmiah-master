@@ -1,0 +1,54 @@
+
+QURAN TOPIC MODELING ANALYSIS - JOURNAL TEMPLATE
+
+1. INTRODUCTION
+This study applies two topic modeling approaches - Correlated Topic Model (CTM) and BERTopic -
+to analyze the thematic structure of the Quranic text in Indonesian translation.
+
+2. METHODOLOGY
+2.1 Data Preprocessing
+- Dataset: 110 suras, 5768 verses
+- Text cleaning: Lowercasing, punctuation removal, stopword removal
+- Tokenization and stemming applied
+- Final corpus: 5768 documents with average length of 10.6 tokens
+
+2.2 Models
+- CTM: 15 topics using tomotopy implementation
+- BERTopic: Transformer-based topic modeling with multilingual BERT
+
+3. RESULTS
+3.1 CTM Results
+- Number of topics identified: 15
+- Key themes identified across suras
+- Document-topic distribution shows 110/110 sura coverage
+
+3.2 BERTopic Results
+- Number of topics identified: 63
+- Outlier verses: 2048
+- Topic diversity and coherence measures
+
+4. COMPARATIVE ANALYSIS
+4.1 Topic Coherence
+- CTM shows strength in capturing broader thematic structures
+- BERTopic demonstrates strength in identifying nuanced sub-themes
+
+4.2 Sura-wise Analysis
+- CTM dominant topics distributed across suras
+- BERTopic provides verse-level thematic analysis
+
+5. THEMATIC INTERPRETATION
+Based on the topic models, key Quranic themes identified include:
+• Faith and belief
+• Social justice
+• Moral guidance
+• Historical narratives
+• Legal principles
+
+6. CONCLUSION
+Both CTM and BERTopic provide complementary insights into Quranic thematic structure.
+CTM offers interpretable broad themes while BERTopic captures detailed semantic patterns.
+
+REFERENCES
+1. Blei, D. M., & Lafferty, J. D. (2007). A correlated topic model of Science.
+2. Grootendorst, M. (2022). BERTopic: Neural topic modeling with a class-based TF-IDF procedure.
+3. Quranic Studies computational analysis references.
