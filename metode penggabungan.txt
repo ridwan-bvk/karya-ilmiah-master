@@ -1,0 +1,30 @@
+Di proyek ini, metode penggabungan topik yang dipakai untuk fitur compare bukan penggabungan model CTM+BERTopic secara statistik/ensemble. Yang dipakai adalah pencocokan topik berbasis kemiripan kata dengan Jaccard similarity lalu dipasangkan secara greedy 1:1.
+
+Rangkumnya seperti ini:
+
+Sistem ambil topik CTM dan BERTopic dari hasil analisis yang sudah tersimpan.
+Kata topik dinormalisasi dulu: lowercase, skor seperti kata(0.123) dihapus untuk perbandingan, spasi dirapikan, duplikat dibuang.
+Untuk setiap topik CTM, sistem membandingkan ke semua topik BERTopic yang belum terpasang.
+Skor kemiripan dihitung dengan rumus Jaccard:
+similarity = |intersection| / |union|
+Dipilih pasangan BERTopic dengan skor tertinggi.
+Kalau skornya > 0, pasangan itu masuk sebagai usulan merge.
+Hasil lalu diurutkan dari similarity tertinggi ke terendah.
+Bukti implementasinya ada di:
+
+_extract_topic_words_for_compare() (line 3246)
+_normalize_topic_rows() (line 3324)
+_build_topic_merge_rows() (line 3347)
+compare_topic_rows() (line 3396)
+Ringkasan internal: COMPARE_TOPIC_MERGE_SUMMARY.md (line 20)
+Di UI juga tertulis eksplisit rumusnya: upload-tab.js (line 416)
+Catatan penting: dari kode frontend, “merge” ini tampaknya post-processing untuk interpretasi tampilan, bukan training ulang topik baru. BERTopic tetap jadi dasar urutan tampilan, lalu kata dari CTM ditambahkan jika belum ada. Itu terlihat di:
+
+upload-tab.js (line 352)
+Referensi materi terkait metode ini
+
+Jaccard similarity, dokumentasi resmi scikit-learn: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.jaccard_score.html
+Paper BERTopic: Maarten Grootendorst, 2022. https://arxiv.org/abs/2203.05794
+Paper CTM/CombinedTM: Federico Bianchi, Silvia Terragni, Dirk Hovy, 2021. https://arxiv.org/abs/2004.03974
+Dokumentasi CombinedTM (CTM): https://contextualized-topic-models.readthedocs.io/en/develop/combined.html
+Kalau Anda mau, saya bisa bantu lanjutkan jadi narasi tinjauan pustaka/landasan teori skripsi tentang metode penggabungan topik ini dalam bahasa akademik Indonesia.
