@@ -1,0 +1,79 @@
+QURAN TOPIC MODELING RESULTS SUMMARY
+==================================================
+
+CTM MODEL SUMMARY:
+Number of topics: 14
+Number of documents: 5765
+
+CTM Topics:
+Topic 0: ayat, ingat, dosa, baca, dengar
+Topic 1: benar, janji, setan, ajar, ambil
+Topic 2: rasul, sembah, dusta, datang, bukti
+Topic 3: kaum, tanda, hidup, mati, waktu
+Topic 4: kufur, hati, takut, balas, rasa
+Topic 5: maha, bumi, langit, tahu, segala
+Topic 6: turun, tempat, kitab, buruk, malaikat
+Topic 7: azab, bawa, timpa, datang, gembira
+Topic 8: hari, jalan, sendiri, kiamat, malam
+Topic 9: masuk, dua, dalam, surga, neraka
+Topic 10: kepada, beri, tunjuk, anugerah, rezeki
+Topic 11: buat, jangan, anak, laki, perempuan
+Topic 12: tuhan, dapat, siapa, kata, tahu
+Topic 13: ada, bagi, baik, iman, jadi
+
+==================================================
+
+BERTopic MODEL SUMMARY:
+Number of topics: 48
+Number of documents: 5765
+Outlier documents: 2231
+
+BERTopic Topics:
+Topic 0: 0_bumi_langit_langit bumi_ada
+Topic 1: 1_nabi_jihad_arab_muslim
+Topic 2: 2_iman_wahai iman_agama_wahai
+Topic 3: 3_hidup_mati_akhirat_dunia
+Topic 4: 4_jahat_hina_benar_laku
+Topic 5: 5_tuhan_maha_tuhan tuhan_nama tuhan
+Topic 6: 6_ayat_ayat ayat_kitab_baca
+Topic 7: 7_kafir_kaum kafir_iman_azab
+Topic 8: 8_rasul_rasul rasul_orang rasul_kepada
+Topic 9: 9_doa_tuhan_salat_rahmat
+Topic 10: 10_ingat_beri ingat_nenek_moyang
+Topic 11: 11_istri_perempuan_laki_istri istri
+Topic 12: 12_tolong_golong_masuk_panggil
+Topic 13: 13_api_air_minum_panas
+Topic 14: 14_dosa_dosa dosa_pikul_ampun
+Topic 15: 15_anugerah_karunia_syukur_rahmat
+Topic 16: 16_hari_celaka hari_hari dusta_celaka
+Topic 17: 17_malaikat_malaikat malaikat_sujud_turun malaikat
+Topic 18: 18_malam_siang_tanda_malam siang
+Topic 19: 19_hamba_hamba hamba_rezeki_hamba pilih
+Topic 20: 20_kebun_buah_pohon_buah buah
+Topic 21: 21_jalan_jauh_jalan lurus_lurus
+Topic 22: 22_neraka_api neraka_api_huni neraka
+Topic 23: 23_ri_main_wahai utus_urus penting
+Topic 24: 24_setan_setan setan_teman_dua
+Topic 25: 25_jangan_jangan sekali_sekali_gesa
+Topic 26: 26_lihat_lihat lihat_dada_kelak lihat
+Topic 27: 27_takut_rasa takut_rasa_takut timpa
+Topic 28: 28_kiamat_hari kiamat_hari_datang
+Topic 29: 29_saksi_saksi atas_saksi saksi_atas
+Topic 30: 30_anak_keluarga_barang_miskin
+Topic 31: 31_sekutu_sekutu sekutu_musuh_tentara
+Topic 32: 32_langit_awan_langit belah_hujan
+Topic 33: 33_ikan_kapal_laut_ikan kepada
+Topic 34: 34_nikmat tuhan_tuhan mana_mana dusta_dusta nikmat
+Topic 35: 35_kerja_usaha_minta pertanggungjawaban_pertanggungjawaban
+Topic 36: 36_belenggu_tangan_dua_rukuk
+Topic 37: 37_burung_mukmin_burung burung_masing
+Topic 38: 38_sihir_mukjizat_kena sihir_musa
+Topic 39: 39_dengar_tuli_dapat dengar_bisik
+Topic 40: 40_balas_sempurna_beri balas_baik
+Topic 41: 41_sungai_sungai sungai_surga_alir bawah
+Topic 42: 42_janji_janji benar_kapan janji_kapan
+Topic 43: 43_sembah_sembah sembah_kaum sembah_kaum
+Topic 44: 44_gunung_gunung gunung_pancang_rumah
+Topic 45: 45_amal saleh_amal_iman amal_saleh
+Topic 46: 46_surga_huni_ada surga_penuh nikmat
+Topic 47: 47_azab_timpa_timpa azab_zulkifli
